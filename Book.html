@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="Normalize.css">
+    <title>Booking</title>
+    <style>
+        body{
+            background-color:snow;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul >
+             <li><a href="index.html">Home</a></li>
+             <li><a href="ToExplore.html">To Explore</a></li>
+             <li><a href="ToDo.html">To Do</a></li>
+             <li><a href="Book.html">Booking</a></li>
+             <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+<br><br><br>
+<form method="post" action="mailto: s10221750@connect.np.edu.sg" enctype="text/plain" class=form>
+    <h1>Booking</h1>
+    <hr>
+    <p>
+        <label for="name">Name:</label>
+        <input type="text"id="name" name="name">
+    </p>
+    <p>
+        <label for="email"><br>Email:</label>
+        <input type="text"id="email" name="email">
+    </p>
+
+    <p>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+    </p>
+
+    <p>
+    <!--dropbox for No. of pax-->
+    <label for="number of pax">Number of pax:</label>
+<select name="pax" >
+    <option value="none">Select Number of Pax</option>
+    <option value="1">1</option>
+    <option value="2">2 </option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+    </p>
+    <label for="tourtype">Tour Type:</label>
+    <input type="radio" id="p" name="p" value="p">
+    <label for="p">Private Tour</label><br>
+    <input type="radio" id="p" name="p" value="p">
+    <label for="p">Private Tour</label><br>
+
+
+
+   
+    <p>
+            <!--To Explore-->
+            <label for="explore">To Explore:</label>
+            <input type="checkbox" id="place1" name="place1" value="place1">
+            <label for="place1"> location 2</label><br>
+            <input type="checkbox" id="place2" name="place2" value="place2">
+            <label for="place2"> location 2</label><br>
+            <input type="checkbox" id="place3" name="place3" value="place3">
+            <label for="place3"> location 3</label><br>
+          
+    </p>
+
+    <p>
+        <!--To Do-->
+        <label for="do">To Do:</label>
+            <input type="checkbox" id="do1" name="do1" value="do1">
+            <label for="do1"> Do 1</label><br>
+            <input type="checkbox" id="do2" name="do2" value="do2">
+            <label for="do2"> Do 2</label><br>
+            <input type="checkbox" id="do3" name="do3" value="do3">
+            <label for="do3"> Do 3</label><br>
+       
+    </p>
+   
+    <p>
+        <input type="submit" value="Submit Feedback">
+        <input type="reset" value="Clear Form">
+    </p>
+
+</form>
+</div>
+
+
+</body>
+</html>

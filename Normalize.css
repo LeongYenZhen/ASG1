@@ -1,0 +1,151 @@
+body,html{
+    background-color:snow;
+    height:100%;
+}
+
+
+
+
+/*styling of navbar*/
+.navbar {
+    background-color:lightsteelblue;
+    padding-inline: 250px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 70px;
+
+}
+/*Position items horizontally, 
+*  mean any element inside .navbar*/
+.navbar *{
+    display:inline;/*also make bullet point go away*/
+
+}
+/*move items to the top of navbar*/
+.navbar li{
+    margin:20px;
+
+}
+/*center align the items in the navbar*/
+.navbar li a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+/* spacing between text in navbar */
+.navbar ul li {
+    padding: 20px;
+}
+
+/* Style for color on the text when hover in navbar */
+.navbar ul li a:hover{
+    color:white;
+    
+}
+
+/* Style the positioning of the link in the navigation bar */
+.navbar ul{
+    list-style: none;
+    display: inline-flex;
+    
+}
+
+/*styling the header image and text*/
+
+.header-image {
+    /* Use "linear-gradient" to add a darken background effect to the image. 
+    This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("media/sg.jpeg");
+  
+    /*set height of image */
+    height: 40%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .header-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
+  .text{
+    text-align: center;
+  }
+
+/*style for flexbox for image*/
+
+.container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*style for image*/
+img{
+    width:300px;
+    height:200px;
+    object-fit: cover;
+    object-position: bottom;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+form{
+    text-align:center;
+}
+
+table{
+    text-align: center;
+}
+
+label{display:inline-block;
+    font-weight:bold;
+    width:90px;
+    text-align: center;
+}
+
+
+/* styling of banner image n text for to explore page*/
+.toexplore-image {
+    /* Use "linear-gradient" to add a darken background effect to the image. 
+    This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("media/toexplore.jpg");
+  
+    /*set height of image */
+    height: 40%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .toexplore-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
