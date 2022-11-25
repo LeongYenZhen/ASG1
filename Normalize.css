@@ -124,11 +124,13 @@ label{display:inline-block;
 }
 
 
+
+
 /* styling of banner image n text for to explore page*/
 .toexplore-image {
     /* Use "linear-gradient" to add a darken background effect to the image. 
     This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("media/toexplore.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("media/toexplore-header.jpg");
   
     /*set height of image */
     height: 40%;
@@ -148,4 +150,29 @@ label{display:inline-block;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+  }
+
+  /* styling of banner image n text for to explore page*/
+.todo-image {
+    /* Use "linear-gradient" to add a darken background effect to the image. 
+    This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("media/todo-banner.webp");
+  
+    /*set height of image */
+    height: 40%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+
+  @media only screen and (max-width: 896px) {
+    .container{
+        font-size: 18px;
+        top:45%;
+    }
+  
   }
