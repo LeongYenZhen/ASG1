@@ -1,98 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/CSS" href="Normalize.css">
-    <title>Booking</title>
-    <style>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/CSS" href="normalize.css">
+        <link rel="stylesheet" type="text/CSS" href="style.css">
+        <script src="script.js"></script>
+        <title>Booking</title>
+        <style>
         body{
             background-color:snow;
-        }
-    </style>
-</head>
-<body>
-    <div class="navbar">
-        <ul >
-             <li><a href="index.html">Home</a></li>
-             <li><a href="ToExplore.html">To Explore</a></li>
-             <li><a href="ToDo.html">To Do</a></li>
-             <li><a href="Book.html">Booking</a></li>
-             <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </div>
-<br><br><br>
-<form method="post" action="mailto: s10221750@connect.np.edu.sg" enctype="text/plain" class=form>
-    <h1>Booking</h1>
-    <hr>
-    <p>
-        <label for="name">Name:</label>
-        <input type="text"id="name" name="name">
-    </p>
-    <p>
-        <label for="email"><br>Email:</label>
-        <input type="text"id="email" name="email">
-    </p>
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="ToExplore.html">To Explore</a></li>
+                <li><a href="ToDo.html">To do</a></li>
+                <li><a href="Book.html">Booking</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <form method="post" action="mailto: s10221750@connect.np.edu.sg" enctype="text/plain" class=form>
+            <h1>Book Your Trip!</h1>
+            <p>Looking forward to exploring Singpaore with you!</p>
+            <hr>
 
-    <p>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date">
-    </p>
+            <label for="txtName">Name</label><br />
+            <input type="text" id="txtName" name="txtName"><br /><br />
+            <label for="txtemail">Email</label><br />
+            <input type="text" id="txtemail" name="txtemal"><br /><br />
+            <label for="type">Tour Type</label><br />
+            <input type="radio" name="private" value="private">Private Tour
+            <input type="radio" name="group" value="group">Group Tour<br /><br />
+            
+            <label for="pax">Number of pax</label><br />
+            <select id="pax" name="pax">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>more than 5</option>
+            </select><br /><br />
 
-    <p>
-    <!--dropbox for No. of pax-->
-    <label for="number of pax">Number of pax:</label>
-<select name="pax" >
-    <option value="none">Select Number of Pax</option>
-    <option value="1">1</option>
-    <option value="2">2 </option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-</select>
-    </p>
-    <label for="tourtype">Tour Type:</label>
-    <input type="radio" id="p" name="p" value="p">
-    <label for="p">Private Tour</label><br>
-    <input type="radio" id="p" name="p" value="p">
-    <label for="p">Private Tour</label><br>
+            <label for="explore">To explore</label><br />
+            <input type="checkbox" name="explore" value="chinatown">Chinatown
+            <input type="checkbox" name="explore" value="gbb"> Garden By The Bay
+            <input type="checkbox" name="explore" value="sentosa">Sentosa
+            <input type="checkbox" name="explore" value="merlion">Merlion Park<br /><br />
 
+            <label for="todo">To do</label><br />
+            <input type="checkbox" name="todo" value="maxwell">Maxwell Food Centre
+            <input type="checkbox" name="todo" value="jewel"> Jewel Changi Airport
+            <input type="checkbox" name="todo" value="roller">Hi Roller Indoor Skating Rink
+            <input type="checkbox" name="todo" value="bus">Big Bus Tours<br /><br />
+            <input type="reset" value="Reset" 
+            style="background-color: red; 
+                    color: white" />
+        <input type="submit" value="Submit" 
+            style="background-color: green; 
+                    color: white" />
+          </form>
 
+          </div><br><br>
+          <footer>
+            <p>© 2022 Leong Yen Zhen</p>
+        </footer>
 
-   
-    <p>
-            <!--To Explore-->
-            <label for="explore">To Explore:</label>
-            <input type="checkbox" id="place1" name="place1" value="place1">
-            <label for="place1"> location 2</label><br>
-            <input type="checkbox" id="place2" name="place2" value="place2">
-            <label for="place2"> location 2</label><br>
-            <input type="checkbox" id="place3" name="place3" value="place3">
-            <label for="place3"> location 3</label><br>
-          
-    </p>
+    </body>
 
-    <p>
-        <!--To Do-->
-        <label for="do">To Do:</label>
-            <input type="checkbox" id="do1" name="do1" value="do1">
-            <label for="do1"> Do 1</label><br>
-            <input type="checkbox" id="do2" name="do2" value="do2">
-            <label for="do2"> Do 2</label><br>
-            <input type="checkbox" id="do3" name="do3" value="do3">
-            <label for="do3"> Do 3</label><br>
-       
-    </p>
-   
-    <p>
-        <input type="submit" value="Submit Feedback">
-        <input type="reset" value="Clear Form">
-    </p>
-
-</form>
-</div>
-
-
-</body>
 </html>

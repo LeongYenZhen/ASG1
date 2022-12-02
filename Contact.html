@@ -5,25 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" type="text/CSS" href="Normalize.css">
-
-
+    <link rel="stylesheet" type="text/CSS" href="normalize.css">
+    <link rel="stylesheet" type="text/CSS" href="style.css">
 </head>
 
 
 <body>
     <div class="navbar">
-        <ul >
-             <li><a href="index.html">Home</a></li>
-             <li><a href="ToExplore.html">To Explore</a></li>
-             <li><a href="ToDo.html">To Do</a></li>
-             <li><a href="Book.html">Booking</a></li>
-             <li><a href="Contact.html">Contact</a></li>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="ToExplore.html">To Explore</a></li>
+            <li><a href="ToDo.html">To do</a></li>
+            <li><a href="Book.html">Booking</a></li>
+            <li><a href="Contact.html">Contact</a></li>
         </ul>
     </div>
-<br><br><br>
-
-
 
 <form method="post" action="mailto: s10221750@connect.np.edu.sg" enctype="text/plain" class=form>
     <h1>Contact us</h1>
@@ -42,10 +38,18 @@
         <textarea name="msg" id="msg" placeholder="Please enter your Message"
         rows="10"cols="30"></textarea>
     </p>
-    <p>
-        <input type="submit" value="Submit Feedback">
-        <input type="reset" value="Clear Form">
-    </p>
+    <P>
+        <input type="reset" value="Reset" 
+            style="background-color: red; 
+                    color: white" />
+        <input type="submit" value="Submit" 
+            style="background-color: green; 
+                    color: white" />
+    </P><br><br>
+    <footer>
+        <p>© 2022 Leong Yen Zhen</p>
+    </footer>
+ 
 
 </form>
-
+</body>
