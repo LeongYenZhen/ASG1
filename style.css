@@ -32,6 +32,8 @@ li a {
 li a:hover {
   background-color: #111;
 }
+/*styling of header image*/
+
 .header-image {
   /* Use "linear-gradient" to add a darken background effect to the image. 
   This will make the text easier to read */
@@ -84,11 +86,14 @@ img{
     object-position: bottom;
     justify-content: center;
     padding: 5px;
+    display:flex
 }
 
 
 form{
-    text-align:center;
+  text-align: justify;
+  text-align:center;
+    
 }
 
 table{
@@ -100,6 +105,7 @@ table{
 
 
 /* styling of banner image n text for to explore page*/
+
 .toexplore-image {
   /* Use "linear-gradient" to add a darken background effect to the image. 
   This will make the text easier to read */
@@ -178,74 +184,6 @@ position: relative;
 
 
 
-.container{
-  display:flex;
-  width:100%;
-  flex-wrap:wrap;
-  align-items: center;
-}
-
-.split{
-  flex-basis: 20%;
-  flex-grow: 1;
-  padding: 1%;
-  flex-direction: row;
-  font-size: medium;
-  text-align: justify;
-  margin-left:-5px;
-  align-items: center;
-}
-
-.split h2 
-{
-  margin-right: 600px;
-  display : inline-flex;
-}
-.split p
-{
-  margin-right : 100px;
-}
-
-
-
-.split img{
-  margin-left: 100px;
-  margin: 0;
-  display : inline-flex;
-}
-
-.box{
-  font-size:14px;line-height: 18px;
-}
-
-.todo{
-  font-size:14px;line-height: 18px;
-}
-
-
-
-
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
-
-
 footer {
   display: flex;
   justify-content: center;
@@ -253,6 +191,7 @@ footer {
   background-color: #45a1ff;
   color: #fff;
 }
+
 
 
 
